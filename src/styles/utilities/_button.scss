@@ -1,0 +1,166 @@
+//
+// @file
+// Button and link styles.
+// ---------------------------------------------------------------------------
+@mixin button {
+  @include inline-block;
+  border: 1px solid;
+  @include box-sizing(content-box);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Button sizes
+// ---------------------------------------------------------------------------
+@mixin button--tiny {
+  padding: rhythm(.25, $fs-xxs) 6px;
+  @include adjust-font-size-to($fs-xxs);
+}
+
+@mixin button--small {
+  padding: 0 10px;
+  @include adjust-font-size-to($fs-xxs);
+  text-transform: uppercase;
+  border-radius: 4px;
+  line-height: 30px;
+  font-weight: 800;
+  height: 30px;
+}
+
+@mixin button--medium {
+  padding: 0 25px;
+  @include adjust-font-size-to($fs-xs);
+  line-height: 32px;
+  height: 32px;
+  border-radius: 4px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+@mixin button--large {
+  padding: 0 18px;
+  @include adjust-font-size-to($fs-l);
+  @include border-radius($radius-m);
+}
+
+// Button colors
+// ---------------------------------------------------------------------------
+@mixin button--primary {
+  background-color: $gray-lighter;
+  border-color: $gray-lighter;
+  color: $gray-dark;
+
+  @include box-shadow(
+    blend-overlay(rgba($black, .25), $gray) 0 -1px 0 0 inset
+  );
+
+  &:hover {
+    color: $gray-darker;
+    background-color: blend-overlay(rgba($white, .25), $gray-lighter);
+  }
+
+  &:active {
+    color: $gray-darker;
+    @include box-shadow(
+      blend-overlay(rgba($black, .25), $gray) 0 1px 0 0 inset
+    );
+  }
+}
+
+@mixin button--secondary {
+  @include button--green;
+}
+
+@mixin button--gold{
+  $btn-clr: $gold;
+  background-color: $btn-clr;
+  border-color: $btn-clr;
+  color: $gray-darker;
+
+  @include box-shadow(
+    blend-overlay(rgba($black, .25), $btn-clr) 0 -1px 0 0 inset
+  );
+
+  &:hover {
+    color: $gray-darker;
+    background-color: blend-overlay(rgba($white, .25), $btn-clr);
+  }
+
+  &:active {
+    color: $gray-darker;
+    @include box-shadow(
+      blend-overlay(rgba($black, .25), $btn-clr) 0 1px 0 0 inset
+    );
+  }
+}
+
+@mixin button--green{
+  $btn-clr: $green;
+  background-color: $btn-clr;
+  border-color: $btn-clr;
+  color: $gray-white;
+
+  &:hover {
+    color: $white;
+    background-color: blend-overlay(rgba($white, .25), $btn-clr);
+  }
+
+  &:active {
+    color: $white;
+    @include box-shadow(
+      blend-overlay(rgba($black, .125), $btn-clr) 0 1px 0 0 inset
+    );
+  }
+}
+
+@mixin button--orange{
+  $btn-clr: $orange;
+  background-color: $btn-clr;
+  @include background(
+    linear-gradient(blend-overlay(rgba($white, .1), $btn-clr) blend-overlay(rgba($black, .1), $btn-clr))
+  );
+  border-color: blend-overlay(rgba($white, .25), $btn-clr) $btn-clr blend-overlay(rgba($black, .25), $btn-clr);
+  color: $gray-white;
+
+  &:hover {
+    color: $white;
+    background-color: blend-overlay(rgba($white, .25), $btn-clr);
+    @include background(
+      linear-gradient(blend-overlay(rgba($white, .25), $btn-clr) blend-overlay(rgba($black, .1), $btn-clr))
+    );
+  }
+
+  &:active {
+    color: $white;
+    border-color: blend-overlay(rgba($black, .25), $btn-clr) $btn-clr blend-overlay(rgba($white, .1), $btn-clr) ;
+    background-color: blend-overlay(rgba($black, .25), $btn-clr);
+    @include background(
+      linear-gradient( blend-overlay(rgba($black, .25), $btn-clr) $btn-clr)
+    );
+  }
+}
+
+// Button icons
+// ---------------------------------------------------------------------------
+@mixin button-icon($x-size: 18px, $y-size: 18px) {
+  content: '';
+  position: relative;
+  width: $x-size;
+  height: $y-size;
+  margin-left: 3px;
+  @include inline-block;
+}
+
+@mixin button-icon--before {
+  &:before {
+    @include button-icon();
+  }
+}
+
+@mixin button-icon--after {
+  &:after {
+    @include button-icon();
+  }
+}

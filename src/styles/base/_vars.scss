@@ -1,0 +1,157 @@
+//
+// @file
+// Variables for use throughout this compass project.
+//-----------------------------------------------------------------------------
+
+// IE Support
+//-----------------------------------------------------------------------------
+// Setting this to false will result in smaller output, but no support for ie6 hacks.
+// $legacy-support-for-ie6: true; // Overrides default set in Support partial.
+
+// Setting this to false will result in smaller output, but no support for ie7 hacks.
+$legacy-support-for-ie7: true; // Overrides default set in Support partial.
+
+//  Color.
+//-----------------------------------------------------------------------------
+$white:             #ffffff;
+$black:             #000000;
+
+$gray-white:        #f8f8f8;
+$gray-lightest:     #f6f6f6;
+$gray-lighter:      #dadbdc;
+$gray-light:        #b3b3b3;
+$gray:              #999d9b;
+$gray-dark:         #404540;
+$gray-darker:       #282d27;
+$gray-darkest:      #292929;
+$gray-black:        #141414;
+
+$red:               #B52828;
+
+$gold:              #ffc222;
+
+$green:             #4aaa42;
+$green-dark:        #257f21;
+
+// Semantic color.
+//----------------------------------------------------------------------------
+$clr-neutral:      $gray-light;      // Default nuetral color
+$clr-text:         $gray-darker;     // Default body copy color
+$clr-link:         $green;           // Default link color
+$clr-accent:       $gold;            // Default accent color
+$clr-border:       $gray-lighter;    // Default border and required color
+$clr-status:       $green;           // Default status color
+$clr-warning:      $gold;          // Default warning color
+$clr-error:        $red;             // Default error and required color
+$clr-table-border: $gray-light;      // Default table border color
+$clr-table-odd:    $gray-white;      // Default table odd row color
+$clr-table-even:   transparent;      // Default table even row color
+
+// Typefaces.
+//----------------------------------------------------------------------------
+$ff-mono:  Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;;
+$ff-sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-serif: "adobe-caslon-pro", Georgia, serif;
+
+// Semantic fonts.
+//----------------------------------------------------------------------------
+$ff-body:    "adobe-caslon-pro", $ff-serif;
+$ff-heading: "proxima-nova", $ff-sans;
+$ff-display: $ff-heading;
+
+// Font size.
+//----------------------------------------------------------------------------
+$fs-xxs:     12px;
+$fs-xs:      12px;
+$fs-s:       15px;
+$fs-m:       16px;
+$fs-l:       20px;
+$fs-xl:      21px;
+$fs-xxl:     28px;
+$fs-xxxl:    36px;
+$fs-xxxxl:   36px;
+$fs-xxxxxl:  48px;
+
+// Semantic font size.
+//----------------------------------------------------------------------------
+$fs-h1: $fs-xxxxl !default;
+$fs-h2: $fs-xxxl !default;
+$fs-h3: $fs-xl !default;
+$fs-h4: $fs-m !default;
+$fs-h5: $fs-s !default;
+$fs-h6: $fs-xxs !default;
+
+// Indentation.
+//----------------------------------------------------------------------------
+$indent-amount: 3em !default;
+
+// Vertical rhythm.
+//----------------------------------------------------------------------------
+$base-font-size:    $fs-m;       // Font-size of your body copy.
+$base-line-height:  6px;         // Setting the base-line-height half.
+                                 // the height of the desired body copy.
+                                 // line-height helps prevent sparse.
+                                 // leading at different font-sizes.
+
+// Layout
+//----------------------------------------------------------------------------
+$box-sizing-polyfill-path: "/sites/all/themes/prototype/polyfills/boxsizing.htc";
+
+// Singularity.
+$grids: 24;
+$gutters: 0;
+$output: 'isolation';
+
+// Breakpoint.
+$breakpoint-no-queries: false;
+$breakpoint-no-query-fallbacks: false;
+
+$mobile: 480px;
+$mobile-wide: 600px;
+$tablet: 768px;
+$tablet-wide: 62em; // 992px
+$desktop: 70.5em; // 1128px;
+$desktop-wide: 1382px;
+
+$bp-sidebars-1: 55.125em; // 882px
+$bp-sidebars-2: 62em; // 992px
+$bp-columns-2: 42em; // 672px
+
+// Width.
+$w-full: 1104px;
+$w-content: 620px;
+$w-sidebar: 320px;
+$w-sidebar-first: 320px;
+$w-gutter: 50px;
+$w-gutter-half: $w-gutter / 2;
+
+// Transition.
+//----------------------------------------------------------------------------
+$default-transition-duration: .15s;
+
+// Text shadow.
+//----------------------------------------------------------------------------
+$default-text-shadow-color: rgba($gray-dark, .6);
+$default-text-shadow-blur: 1px;
+$default-text-shadow-v-offset: 1px;
+
+// Border radius.
+//----------------------------------------------------------------------------
+$radius-s: .25em;
+$radius-m: .5em;
+$radius-l: 50%;
+
+// Box Shadow.
+//----------------------------------------------------------------------------
+$default-box-shadow-color: rgba($black, .25);
+$default-box-shadow-v-offset: 1px;
+$default-box-shadow-blur: 1px;
+
+// Button settings.
+//----------------------------------------------------------------------------
+$clr-btn--primary:   $gray;
+$clr-btn--secondary: $gray-dark;
+$clr-btn--tertiary:  $gray-light;
+$btn-style: 'none';
+$btn-highlight-strength: .5;
+$btn-shadow-strength: .5;

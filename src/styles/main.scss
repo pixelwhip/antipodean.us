@@ -1,0 +1,47 @@
+@import "base/init";
+@import "base/normalize";
+@import "base/elements";
+@import "components/post";
+@import "components/trips";
+@import "components/navbar";
+
+.footer {
+  text-align: center;
+  background-color: $white;
+  padding: rhythm(2) 1em;
+}
+
+.image {
+  margin: rhythm(6) auto;
+  max-width: 1024px;
+}
+
+.image--portrait {
+  max-width: rhythm(90);
+}
+
+#map {
+  height: 360px;
+  z-index: 1;
+  margin: rhythm(6);
+}
+
+.map-vignette {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  @include box-shadow($white 0 0 80px 40px inset);
+  pointer-events: none;
+}
+
+.leaflet-map-pane {
+  z-index: 1;
+}
+.leaflet-control-container {
+  z-index: 3;
+}
+
+.leaflet-container {
+  background-color: white;
+}

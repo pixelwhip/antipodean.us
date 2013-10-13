@@ -1,0 +1,25 @@
+//
+// @file
+// Trips styles.
+//
+// ----------------------------------------------------------------------------
+
+.trips-list {
+  margin: rhythm(6) auto;
+  padding: 1em;
+}
+
+.trips-item {
+  border-top: 1px solid $clr-border;
+  padding: rhythm(2) 0;
+  list-style: none;
+
+  &:first-child {
+    border: none;
+  }
+}
+
+.trips-byline {
+  display: block;
+  @include adjust-font-size-to($fs-xxs);
+}

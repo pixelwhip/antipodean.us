@@ -1,0 +1,20 @@
+{
+  "canola": {
+    "title": "Canola",
+    "filename": "canola.jpg",
+    "caption": "Yellow fields",
+    "location": {
+      "lat": -23.4,
+      "long": 46.4
+    }
+  },
+  "flies": {
+    "title": "Flies",
+    "filename": "flies.jpg",
+    "caption": "Flies on my back",
+    "location": {
+      "lat": -64.4,
+      "long": 33.4
+    }
+  }
+}

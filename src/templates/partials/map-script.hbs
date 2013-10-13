@@ -1,0 +1,11 @@
+---
+component: map-script
+---
+
+<script type='text/javascript'>
+  var kmlLayer = new L.KML("/assets/maps/{{kml}}.kml", {async: true});
+  kmlLayer.on("loaded", function(e) {
+    map.fitBounds(e.target.getBounds());
+  });
+  map.addLayer(kmlLayer);
+</script>

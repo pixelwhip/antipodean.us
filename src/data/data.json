@@ -1,0 +1,11 @@
+{
+  "collections": [
+    {
+      "name": "images",
+      "inflection": "image"  ,
+      "sortorder": "ascending",
+      "sortby": "datetime",
+      "index": "src/templates/indices/archives.hbs"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+//
+// @file
+// Post styles.
+//
+// ----------------------------------------------------------------------------
+.post-background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  @include box-shadow(
+    rgba($black, .8) 0 0 200px 0 inset,
+    rgba($black, .3) 0 0 2000px 2000px inset
+  );
+}
+
+.post-header {
+  // Layout
+  position: relative;
+  height: 100%;
+  width: 100%;
+  // Type
+  color: $white;
+  @include text-shadow(
+    rgba($black, .8) 0 0 6px,
+    rgba($black, .4) 0 4px 18px
+  );
+  text-align: center;
+}
+
+.post-header-inner {
+  position: relative;
+  top: 33%;
+  padding: 0 2em;
+  margin: 0 auto;
+  @include inline-block;
+  background-color: $black;
+  background-color: rgba($black, .5);
+  border: 2px $white solid;
+  @include box-shadow(
+    rgba($black, .6) 0 0 40px 1px inset,
+    rgba($black, .6) 0 0 0 2px inset,
+    $white 0 0 0 3px inset
+    );
+}
+
+.post-title {
+  @include adjust-font-size-to($fs-xxxxl);
+  @include trailing-border(1px, 1, $fs-xxxxl);
+  @include inline-block;
+  border-bottom-color: $white;
+  font-weight: normal;
+  margin: rhythm(3, $fs-xxxxl) 0 rhythm(1, $fs-xxxxl);
+}
+
+.post-byline {
+  font-weight: normal;
+  @include adjust-font-size-to($fs-s);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.post-byline-separator {
+  margin: 0 .5em;
+}
+
+.post-intro {
+  @include adjust-font-size-to($fs-xl);
+}
+
+.post-content {
+  position: relative;
+  background: $white;
+  border-top: $clr-border 1px solid;
+  @include box-shadow(rgba($black, .4) 0 0 20px);
+}
+
+.post-body {
+  margin-top: 100%;
+  margin: 0 auto;
+  padding: 2em 1em;
+
+  > p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rhythm(90);
+  }
+
+  .post-intro {
+    max-width: rhythm(90, $fs-xl);
+  }
+}

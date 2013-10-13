@@ -1,0 +1,26 @@
+---
+component: post-background
+---
+<style type="text/css">
+{{#each flickr.photos.photo}}{{#is this.id ../main-image}}
+  .post-background { background-image: url('{{this.url_o}}');}
+  {{#if this.url_l}}
+  @media (max-width: 1024px) {
+    .post-background { background-image: url('{{this.url_l}}');}
+  }
+  {{/if}}
+  @media (max-width: 640px) {
+    .post-background { background-image: url('{{this.url_z}}');}
+  }
+  {{#gt this.height_t this.width_t}}
+  {{#if this.url_l}}
+  @media (max-height: 1024px) and (orientation: portrait) {
+    .post-background { background-image: url('{{this.url_l}}');}
+  }
+  {{/if}}
+  @media (max-height: 640px) and (orientation: portrait) {
+    .post-background { background-image: url('{{this.url_z}}');}
+  }
+  {{/gt}}
+{{/is}}{{/each}}
+</style>

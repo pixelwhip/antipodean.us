@@ -1,0 +1,23 @@
+//
+// @file
+// Navbar styles.
+//
+// ----------------------------------------------------------------------------
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-color: rgba($black, .6);
+  padding: 0 1em;
+}
+
+.navbar-brand {
+  color: $white;
+  @include adjust-font-size-to($fs-xs);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: $ff-sans;
+  letter-spacing: .1em;
+}

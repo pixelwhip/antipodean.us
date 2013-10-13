@@ -1,0 +1,18 @@
+---
+title: Antipodeon.us
+lead: Great Success!
+layout: default.hbs
+---
+
+<ul class="trips-list">
+  {{#each categories}}
+    {{#is category "trip"}}
+      {{#each pages}}
+      <li class="trips-item {{#is ../page.dest this.dest}}active{{/is}}">
+        <a class="trips-link" href="posts/{{this.filename}}">{{this.data.title}}</a>
+        <small class="trips-byline"><span class="post-place">{{this.data.place}}</span> <span class="post-byline-separator">&#8226;</span> <span class="post-date">{{this.data.date}}</span></small>
+      </li>
+      {{/each}}
+    {{/is}}
+  {{/each}}
+</ul>

@@ -1,0 +1,285 @@
+//
+// @file
+// Default tag styles.
+//
+// The only class selectors allowed in this file are those intended
+// for use within the WYSIWYG editor.
+// ----------------------------------------------------------------------------
+
+
+// Establish Vertical rhythm.
+* html {
+  font-size: 100% * $base-font-size / $browser-default-font-size;
+}
+
+html {
+  font-size: $base-font-size;
+  // Override the default line height to allow for smaller baseline increments.
+  @include adjust-leading-to(4);
+  height: 100%;
+}
+
+body {
+  color: $clr-text;
+  height: 100%;
+}
+
+// Use border-box by default on elements typically used for layout.
+article,
+div,
+section,
+header,
+footer,
+aside,
+figure,
+figcaption,
+li,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include border-box;
+}
+
+
+// Headings
+//-----------------------------------------------------------------------------
+
+h1 {
+  @include adjust-font-size-to($fs-h1);
+  @include rhythm(2, 0, 0, 2, $fs-h1);
+  font-weight: 600;
+}
+
+h2 {
+  @include adjust-font-size-to($fs-h2);
+  @include rhythm(2, 0, 0, 2, $fs-h2);
+  font-weight: 600;
+}
+
+h3 {
+  @include adjust-font-size-to($fs-h3);
+  @include rhythm(2, 0, 0, 2, $fs-h3);
+  font-weight: 600;
+}
+
+h4 {
+  @include adjust-font-size-to($fs-h4);
+  @include rhythm(4, 0, 0, 0, $fs-h4);
+  font-weight: 600;
+}
+
+h5 {
+  @include adjust-font-size-to($fs-h5);
+  @include rhythm(4, 0, 0, 0, $fs-h5);
+  font-weight: 800;
+}
+
+h6 {
+  @include adjust-font-size-to($fs-h6);
+  @include rhythm(4, 0, 0, 0, $fs-h6);
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+
+// Links
+//-----------------------------------------------------------------------------
+
+a {
+  @include link-colors($clr-link, darken($clr-link, 10%));
+  @include hover-link;
+}
+
+
+// Copy
+//-----------------------------------------------------------------------------
+
+p {
+  margin: 0 0 rhythm(4);
+}
+
+blockquote {
+  margin: rhythm(2) 0 rhythm(2) $indent-amount;
+  font-style: italic;
+}
+
+
+// Images
+//-----------------------------------------------------------------------------
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+// Definition Lists
+//-----------------------------------------------------------------------------
+
+dl {
+  margin-bottom: rhythm(3);
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: $w-gutter;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  @include box-shadow(0 0 5px $gray);
+}
+
+
+// Form Labels
+// ---------------------
+
+label {
+  @include adjust-font-size-to($fs-xs);
+  display: block;
+  margin-bottom: rhythm(1, $fs-xs);
+  font-family: $ff-sans;
+  font-weight: bold;
+
+  // Labels on checkboxes and radios
+  &.option {
+    display: inline;
+    font-weight: normal;
+  }
+}
+
+
+// Forms
+//-----------------------------------------------------------------------------
+
+/**
+ * Give form elements some cursor interactions...
+ */
+label,
+input,
+textarea,
+button,
+select,
+option{
+    cursor:pointer;
+}
+
+textarea,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  @include border-radius(4px);
+  @include box-sizing(border-box);
+  @include rhythm-borders(1px, .5);
+  max-width: 100%;
+  background-color: $white;
+  border: 1px solid $clr-border;
+  font-size: $fs-xs;
+  padding-left: 6px;
+  padding-right: 6px;
+  @include box-shadow(
+    rgba($black, .25) 0 1px 1px 0 inset
+  );
+  color: $gray-darker;
+  font-family: $ff-body;
+
+  &:focus {
+    border-color: $gray;
+    outline:none;
+    cursor:text;
+  }
+}
+
+input[type="file"] {
+  font-size: $fs-xs;
+  font-family: $ff-sans;
+}
+
+select {
+  font-size: $fs-xs;
+  max-width: 100%;
+}
+
+input[type="submit"],
+button {
+  @include button;
+  @include button--medium;
+  @include button--primary;
+}
+
+// Tables
+// ----------------------------------------------------------------------------
+
+table {
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: rhythm(2);
+}
+
+thead {
+  text-align: left;
+
+  th {
+    vertical-align: bottom;
+  }
+}
+
+th,
+td {
+  padding: 8px;
+  vertical-align: top;
+  border-top: 1px solid $clr-table-border;
+}
+
+// Remove top border from thead by default
+caption + thead tr:first-child th,
+caption + thead tr:first-child td,
+colgroup + thead tr:first-child th,
+colgroup + thead tr:first-child td,
+thead:first-child tr:first-child th,
+thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+// Account for multiple tbody instances
+tbody + tbody {
+  border-top: 2px solid $clr-table-border;
+}
+
+tr.odd  { background-color: $clr-table-odd; }
+tr.even { background-color: $clr-table-even; }
+
+
+// Utility classes
+//-----------------------------------------------------------------------------
+
+.clearfix {
+  @include legacy-pie-clearfix;
+}
+
+.intro {
+  @include adjust-font-size-to($fs-xxl);
+}
