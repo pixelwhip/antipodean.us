@@ -163,7 +163,6 @@ module.exports = function(grunt) {
         }
       }
     },
-
     open: {
       server: {
         path: 'http://antipodean.loc:<%= connect.options.port %>'
@@ -292,8 +291,15 @@ module.exports = function(grunt) {
         // 'svgmin',
         // 'htmlmin'
       ]
+    },
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
     }
   });
+  grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('assemble');
   // Default task to be run.
   grunt.registerTask('default', ['clean', 'assemble']);
