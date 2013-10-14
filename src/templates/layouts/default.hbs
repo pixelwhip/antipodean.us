@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>{{title}} | {{site.title}}</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
     <!--[if lte IE 8]>
        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
     <![endif]-->
-    {{!-- <link rel="stylesheet" href="{{assets}}/styles/assemble.css"> --}}
-    {{!-- <link rel="stylesheet" href="{{assets}}/styles/github.css"> --}}
     <link rel="stylesheet" href="{{assets}}/styles/main.css">
     <script type="text/javascript" src="//use.typekit.net/eti8qxy.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -17,11 +21,7 @@
     {{> navbar-fixed-top }}
     {{> body }}{{> site-footer }}
     <script src='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
-    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
-    <!-- <script src="{{assets}}/scripts/leaflet/leaflet.js"></script>-->
     <script src="{{assets}}/scripts/leaflet/plugins/vector/KML.js"></script>
-    <!--<script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
-    <script src="http://matchingnotes.com/javascripts/leaflet-google.js"></script>-->
     <script src="{{assets}}/scripts/map.js"></script>
     <script src="{{assets}}/scripts/highlight.js"></script>
     {{#if kml}}
