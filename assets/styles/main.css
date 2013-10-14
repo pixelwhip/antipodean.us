@@ -1,0 +1,882 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\0000319}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\0000329}}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\0000342}}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\0000352}}
+[hidden] {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\0000375}}
+html,
+input,
+select,
+textarea {
+  font-family: "adobe-caslon-pro", "adobe-caslon-pro", Georgia, serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\0000383}}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\0000397}}
+a:focus {
+  outline: thin dotted;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003107}}
+a:hover,
+a:active {
+  outline: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003121}}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003130}}
+b,
+strong {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003134}}
+blockquote {
+  margin: 0.375em 3em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003143}}
+dfn {
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003151}}
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003161}}
+p,
+pre {
+  margin: 0.375em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003174}}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003186}}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003199}}
+q {
+  quotes: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003206}}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003211}}
+small {
+  font-size: 75%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003221}}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003228}}
+sup {
+  top: -0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003232}}
+sub {
+  bottom: -0.25em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003248}}
+dl,
+menu,
+ol,
+ul {
+  margin: 0.375em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003253}}
+dd {
+  margin: 0 0 0 3em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003263}}
+menu,
+ol,
+ul {
+  padding: 0 0 0 3em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003272}}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003288}}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003297}}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003310}}
+figure {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003323}}
+form {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003331}}
+fieldset {
+  border-color: #dadbdc;
+  margin: 0.75em 0;
+  border-top-style: solid;
+  border-top-width: 0.0625em;
+  padding-top: 0.6875em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.0625em;
+  padding-bottom: 0.6875em;
+  border-left-style: solid;
+  border-left-width: 0.0625em;
+  padding-left: 0.6875em;
+  border-right-style: solid;
+  border-right-width: 0.0625em;
+  padding-right: 0.6875em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003347}}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003365}}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003379}}
+button,
+input {
+  line-height: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003393}}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  overflow: visible;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003406}}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003418}}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003432}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003442}}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003452}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003462}}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_normalize\.scss}line{font-family:\00003476}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\0000311}}
+* html {
+  font-size: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\0000315}}
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\0000322}}
+body {
+  color: #282d27;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\0000344}}
+article,
+div,
+section,
+header,
+footer,
+aside,
+figure,
+figcaption,
+li,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *box-sizing: content-box;
+  *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\0000352}}
+h1 {
+  font-size: 2.25em;
+  line-height: 1.16667em;
+  margin-top: 0.33333em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.33333em;
+  font-weight: 600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\0000358}}
+h2 {
+  font-size: 2.25em;
+  line-height: 1.16667em;
+  margin-top: 0.33333em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.33333em;
+  font-weight: 600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\0000364}}
+h3 {
+  font-size: 1.3125em;
+  line-height: 1.42857em;
+  margin-top: 0.57143em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.57143em;
+  font-weight: 600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\0000370}}
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+  font-weight: 600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\0000376}}
+h5 {
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  margin-top: 1.6em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+  font-weight: 800;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\0000382}}
+h6 {
+  font-size: 0.75em;
+  line-height: 1.5em;
+  margin-top: 2em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\0000394}}
+a {
+  color: #4aaa42;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000324}}
+a:hover {
+  color: #3a8534;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_hover-link\.scss}line{font-family:\000034}}
+a:hover {
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003103}}
+p {
+  margin: 0 0 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003107}}
+blockquote {
+  margin: 0.75em 0 0.75em 3em;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003116}}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003125}}
+dl {
+  margin-bottom: 1.125em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003129}}
+dt {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003133}}
+dd {
+  margin-left: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003140}}
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 5px #999d9b;
+  -moz-box-shadow: 0 0 5px #999d9b;
+  box-shadow: 0 0 5px #999d9b;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003148}}
+label {
+  font-size: 0.75em;
+  line-height: 1.5em;
+  display: block;
+  margin-bottom: 0.5em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003156}}
+label.option {
+  display: inline;
+  font-weight: normal;
+}
+
+/**
+ * Give form elements some cursor interactions...
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003174}}
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003191}}
+textarea,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0.0625em;
+  padding: 0.125em;
+  max-width: 100%;
+  background-color: white;
+  border: 1px solid #dadbdc;
+  font-size: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 1px 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 1px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 1px 1px 0 inset;
+  color: #282d27;
+  font-family: "adobe-caslon-pro", "adobe-caslon-pro", Georgia, serif;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003207}}
+textarea:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus {
+  border-color: #999d9b;
+  outline: none;
+  cursor: text;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003214}}
+input[type="file"] {
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003219}}
+select {
+  font-size: 12px;
+  max-width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003225}}
+input[type="submit"],
+button {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  border: 1px solid;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 0 25px;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  line-height: 32px;
+  height: 32px;
+  border-radius: 4px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #dadbdc;
+  border-color: #dadbdc;
+  color: #404540;
+  -webkit-box-shadow: blend-overlay(rgba(0, 0, 0, 0.25), #999d9b) 0 -1px 0 0 inset;
+  -moz-box-shadow: blend-overlay(rgba(0, 0, 0, 0.25), #999d9b) 0 -1px 0 0 inset;
+  box-shadow: blend-overlay(rgba(0, 0, 0, 0.25), #999d9b) 0 -1px 0 0 inset;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/utilities\/_button\.scss}line{font-family:\0000310}}
+input[type="submit"]:hover,
+button:hover {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/utilities\/_button\.scss}line{font-family:\0000359}}
+input[type="submit"]:hover,
+button:hover {
+  color: #282d27;
+  background-color: blend-overlay(rgba(255, 255, 255, 0.25), #dadbdc);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/utilities\/_button\.scss}line{font-family:\0000364}}
+input[type="submit"]:active,
+button:active {
+  color: #282d27;
+  -webkit-box-shadow: blend-overlay(rgba(0, 0, 0, 0.25), #999d9b) 0 1px 0 0 inset;
+  -moz-box-shadow: blend-overlay(rgba(0, 0, 0, 0.25), #999d9b) 0 1px 0 0 inset;
+  box-shadow: blend-overlay(rgba(0, 0, 0, 0.25), #999d9b) 0 1px 0 0 inset;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003234}}
+table {
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 0.75em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003242}}
+thead {
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003245}}
+thead th {
+  vertical-align: bottom;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003251}}
+th,
+td {
+  padding: 8px;
+  vertical-align: top;
+  border-top: 1px solid #b3b3b3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003263}}
+caption + thead tr:first-child th,
+caption + thead tr:first-child td,
+colgroup + thead tr:first-child th,
+colgroup + thead tr:first-child td,
+thead:first-child tr:first-child th,
+thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003268}}
+tbody + tbody {
+  border-top: 2px solid #b3b3b3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003272}}
+tr.odd {
+  background-color: #f8f8f8;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003273}}
+tr.even {
+  background-color: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003279}}
+.clearfix {
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/base\/_elements\.scss}line{font-family:\00003283}}
+.intro {
+  font-size: 1.75em;
+  line-height: 1.28571em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_post\.scss}line{font-family:\000036}}
+.post-background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 0 200px 0 inset, rgba(0, 0, 0, 0.3) 0 0 2000px 2000px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 200px 0 inset, rgba(0, 0, 0, 0.3) 0 0 2000px 2000px inset;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 200px 0 inset, rgba(0, 0, 0, 0.3) 0 0 2000px 2000px inset;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_post\.scss}line{font-family:\0000320}}
+.post-header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.8) 0 0 6px, rgba(0, 0, 0, 0.4) 0 4px 18px;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_post\.scss}line{font-family:\0000334}}
+.post-header-inner {
+  position: relative;
+  top: 33%;
+  padding: 0 2em;
+  margin: 0 auto;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px white solid;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 40px 1px inset, rgba(0, 0, 0, 0.6) 0 0 0 2px inset, white 0 0 0 3px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 40px 1px inset, rgba(0, 0, 0, 0.6) 0 0 0 2px inset, white 0 0 0 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 40px 1px inset, rgba(0, 0, 0, 0.6) 0 0 0 2px inset, white 0 0 0 3px inset;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_post\.scss}line{font-family:\0000350}}
+.post-title {
+  font-size: 2.25em;
+  line-height: 1.16667em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.02778em;
+  padding-bottom: 0.13889em;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  border-bottom-color: white;
+  font-weight: normal;
+  margin: 0.5em 0 0.16667em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_post\.scss}line{font-family:\0000359}}
+.post-byline {
+  font-weight: normal;
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_post\.scss}line{font-family:\0000366}}
+.post-byline-separator {
+  margin: 0 .5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_post\.scss}line{font-family:\0000370}}
+.post-intro {
+  font-size: 1.3125em;
+  line-height: 1.42857em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_post\.scss}line{font-family:\0000374}}
+.post-content {
+  position: relative;
+  background: white;
+  border-top: #dadbdc 1px solid;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 20px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_post\.scss}line{font-family:\0000381}}
+.post-body {
+  margin-top: 100%;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_post\.scss}line{font-family:\0000386}}
+.post-body > p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 33.75em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_post\.scss}line{font-family:\0000392}}
+.post-body .post-intro {
+  max-width: 25.71429em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_trips\.scss}line{font-family:\000037}}
+.trips-list {
+  margin: 2.25em auto;
+  padding: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_trips\.scss}line{font-family:\0000312}}
+.trips-item {
+  border-top: 1px solid #dadbdc;
+  padding: 0.75em 0;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_trips\.scss}line{font-family:\0000317}}
+.trips-item:first-child {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_trips\.scss}line{font-family:\0000322}}
+.trips-byline {
+  display: block;
+  font-size: 0.75em;
+  line-height: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_navbar\.scss}line{font-family:\000037}}
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/components\/_navbar\.scss}line{font-family:\0000316}}
+.navbar-brand {
+  color: white;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: .1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/main\.scss}line{font-family:\000038}}
+.footer {
+  text-align: center;
+  background-color: white;
+  padding: 0.75em 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/main\.scss}line{font-family:\0000314}}
+.image {
+  margin: 2.25em auto;
+  max-width: 1024px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/main\.scss}line{font-family:\0000319}}
+.image--portrait {
+  max-width: 33.75em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/main\.scss}line{font-family:\0000323}}
+#map {
+  height: 360px;
+  z-index: 1;
+  margin: 2.25em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/main\.scss}line{font-family:\0000329}}
+.map-vignette {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  -webkit-box-shadow: white 0 0 80px 40px inset;
+  -moz-box-shadow: white 0 0 80px 40px inset;
+  box-shadow: white 0 0 80px 40px inset;
+  pointer-events: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/main\.scss}line{font-family:\0000338}}
+.leaflet-map-pane {
+  z-index: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/main\.scss}line{font-family:\0000341}}
+.leaflet-control-container {
+  z-index: 3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pixelwhip\/Sites\/antipodeon\.loc\/src\/styles\/main\.scss}line{font-family:\0000345}}
+.leaflet-container {
+  background-color: white;
+}
