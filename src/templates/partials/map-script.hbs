@@ -3,9 +3,17 @@ component: map-script
 ---
 
 <script type='text/javascript'>
+  {{#if kml}}
   var kmlLayer = new L.KML("/assets/maps/{{kml}}.kml", {async: true});
   kmlLayer.on("loaded", function(e) {
     map.fitBounds(e.target.getBounds());
   });
   map.addLayer(kmlLayer);
+  {{/if}}
+
+  {{#if bounds}}
+  map.fitBounds([
+    {{bounds}}
+  ]);
+  {{/if}}
 </script>

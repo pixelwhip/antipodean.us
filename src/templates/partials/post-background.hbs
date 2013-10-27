@@ -2,7 +2,7 @@
 component: post-background
 ---
 <style type="text/css">
-{{#each flickr.photos.photo}}{{#is this.id ../main-image}}
+{{#each photos.photo}}{{#is this.id ../main-image}}
   .post-background { background-image: url('{{this.url_o}}');}
   {{#if this.url_l}}
   @media (max-width: 1024px) {

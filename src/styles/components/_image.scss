@@ -1,0 +1,19 @@
+.image {
+  margin: rhythm(6) auto;
+  max-width: 1024px;
+}
+
+.image--portrait {
+  max-width: rhythm(90);
+}
+
+.image-title {
+  @include adjust-font-size-to($fs-s);
+}
+
+.image-cite {
+  color: $gray;
+  font-family: $ff-sans;
+  font-weight: bold;
+  @include adjust-font-size-to($fs-xs, 3, $fs-s);
+}

@@ -22,6 +22,8 @@
   position: relative;
   height: 100%;
   width: 100%;
+  padding: 0 2em;
+
   // Type
   color: $white;
   @include text-shadow(
@@ -48,12 +50,12 @@
 }
 
 .post-title {
-  @include adjust-font-size-to($fs-xxxxl);
-  @include trailing-border(1px, 1, $fs-xxxxl);
+  @include adjust-font-size-to($fs-xxxl);
+  @include trailing-border(1px, 1, $fs-xxxl);
   @include inline-block;
   border-bottom-color: $white;
   font-weight: normal;
-  margin: rhythm(3, $fs-xxxxl) 0 rhythm(1, $fs-xxxxl);
+  margin: rhythm(3, $fs-xxxl) 0 rhythm(1, $fs-xxxl);
 }
 
 .post-byline {

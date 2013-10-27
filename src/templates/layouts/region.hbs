@@ -1,0 +1,29 @@
+---
+layout: default.hbs
+---
+{{> post-background}}
+<div class="post-background"></div>
+<header class="post-header">
+  <div class="post-header-inner">
+    <h1 class="post-title">{{title}}</h1>
+    <p class="post-byline"><span class="post-date">{{date}}</span></p>
+  </div>
+</header>
+<div class="post-content">
+  <div class="post-body">
+    <p class="post-intro">{{{intro}}}</p>
+    {{#markdown}}{{ body }}{{/markdown}}
+  </div>
+<ul class="trips-list">
+  {{#each regions}}
+    {{#is region ../region}}
+      {{#each pages}}
+      <li class="trips-item {{#is ../page.dest this.dest}}active{{/is}}">
+        <a class="trips-link" href="{{this.basename}}">{{this.data.title}}</a>
+        <small class="trips-byline"><span class="post-place">{{this.data.place}}</span> <span class="post-byline-separator">&#8226;</span> <span class="post-date">{{this.data.date}}</span></small>
+      </li>
+      {{/each}}
+    {{/is}}
+  {{/each}}
+</ul>
+</div>

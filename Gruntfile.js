@@ -25,6 +25,7 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
   // load all grunt tasks
   require('load-grunt-tasks')(grunt);
+  require('./config');
 
   // configurable paths
   var yeomanConfig = {
@@ -35,7 +36,9 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     yeoman: yeomanConfig,
-
+    flickr: {
+      tasks: ['flickr']
+    },
     watch: {
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
@@ -80,7 +83,8 @@ module.exports = function(grunt) {
       options: {
         port: 9001,
         // change this to '0.0.0.0' to access the server from outside
-        hostname: 'antipodean.loc'
+        // hostname: 'antipodean.loc'
+        hostname: '0.0.0.0'
       },
       livereload: {
         options: {
@@ -118,49 +122,55 @@ module.exports = function(grunt) {
       options: {
         flatten: true,
         assets: 'dist/assets',
+        collections: [
+          {
+            name: 'regions',
+            inflection: 'region',
+            sortorder: 'ascending', // or any of the following ['asc', 'desc', 'descending'] upper or lower case
+            sortby: 'title'
+          }
+        ],
         data: 'src/data/*.{json,yml}',
         engine: 'handlebars',
         helpers: ['src/helpers/**/*.js' ],
         layoutdir: 'src/templates/layouts/',
         layout: 'default.hbs',
-        partials: 'src/templates/partials/*.hbs'
+        partials: 'src/templates/partials/*.hbs',
+        plugins: ['permalinks'],
+        permalinks: {
+          structure: ':slug/:basename/index.html'
+        }
       },
-      posts: {
+      regions: {
         options: {
           ext: '.html',
-          layout: 'post.hbs'
+          layout: 'post.hbs',
+          expand: true
         },
-        files: {
-          'dist/': ['src/templates/pages/*.hbs'],
-          'dist/posts/': ['src/content/*.md']
-        }
-      }
-    },
-    image_profile: {
-      options: {},
-
-      location: {
-        options: {
-          exif: {
-            'GPSLatitude': '60/1, 192322/10000, 0/1',
-            'GPSLatitudeRef': 'N',
-            'GPSLongitude': '24/1, 26125/10000, 0/1',
-            'GPSLongitudeRef': 'E'
-          }
-        },
-        src: ['src/images/*.jpg']
-      },
-
-      save_profiles: {
-        options: {
-          save: [
-            'xmp',
-            'iptc'
-          ]
-        },
-        files: {
-          'dist/profiles': ['src/images/*.jpg']
-        }
+        files: [
+          {
+            dest: 'dist/',
+            src: 'src/templates/pages/*.hbs',
+            layout: 'default.hbs'
+          },
+          {
+            layout: 'region.hbs',
+            expand: true,
+            dest: 'dist/',
+            src: 'src/content/regions/*.md',
+            rename: function(dest, src){
+              return dest + '/index.html';
+            }
+          },
+          {
+            expand: true,
+            dest: 'dist',
+            src: 'src/content/posts/**/*.md',
+            rename: function(dest, src){
+              return dest + '/index.html';
+            }
+          },
+        ]
       }
     },
     open: {
@@ -299,6 +309,7 @@ module.exports = function(grunt) {
       src: ['**']
     }
   });
+  grunt.loadNpmTasks('grunt-contrib-flickr');
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('assemble');
   // Default task to be run.

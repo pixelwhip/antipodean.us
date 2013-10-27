@@ -17,4 +17,5 @@ tmp
 .sass-cache
 dist
 config.rb
+config.js
 .grunt
